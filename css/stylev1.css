@@ -1,0 +1,93 @@
+/*---------Body Header--------*/
+/*----------Navbar-----------*/
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: darkcyan;
+    color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+.inline-block {
+    display: inline-block;
+}
+
+/*-----------Body Main------------*/
+
+.inline {
+    display: inline;
+    }
+
+.box {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    text-align: center;
+}
+
+.heroImg {
+    background-image: url(https://imagenes.20minutos.es/files/image_656_370/uploads/imagenes/2020/03/13/juegos-de-mesa.jpeg); 
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.textFormat {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Times New Roman', Times, serif, Courier, monospace;
+}
+
+h1 {
+    font-size: 35px;   
+}
+
+.divFormat {
+    display: inline-block;
+}
+
+/*fichas tecnicas juegos*/
+
+.boxFichaTecnica {
+    background-color: #EFDAD7;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding-left: 5px;
+}
+
+/*articulos noticias*/
+
+.newsEventsFormat {
+    height: 200px;
+    margin-left: 10px;
+   
+}
+
+/*para mensaje en contacto*/
+.inputFormat {
+    height: 100px;
+    }
+
+/*----------Body Footer-----------*/
+
+tbody tr td a {
+    text-decoration: none;
+    color:white
+}

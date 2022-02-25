@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    display: inline-block;
+    padding: 5px;
+    background-color: #1572A1;
+    position: sticky;
+    top: 0px;
+    grid-area: header;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__start {
+    display: flex;
+    align-self: center;
+}
+
+.h2__format {
+    color: rgb(179, 198, 214); 
+    margin-right: auto; 
+    padding-left: 5px;
+}
+
+header div span {
+    display: none;
+    align-self: center;
+}
+
+.img__format {
+    display: flex;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+header div nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+header div nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    padding: 8px 12px;
+    font-size: 20px;
+    background-color: darkcyan;
+    border-radius: 15px;
+    border: 2px solid black;  
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    }
+
+/*Estilo del menu desplegable proximamente a incorporar*/
+.burguer__list {
+    background-color: #1572A1;
+    width: 100%;
+    text-align: end;
+    position: absolute;
+    top: 97px;
+    right: 0px;
+    display: none;
+}
+
+.burguer__list ul {
+    list-style: none;
+}
+
+.burguer__list ul li a {
+    text-decoration: none;
+    color: white;
+}
+/*aca termina el estilo del menu desplegable*/
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    /*background-color: aqua; */
+    background-image: linear-gradient(to bottom, #cecece 10%, #1572A1);
+    background-size: contain;
+    padding: 10px;
+}
+
+.footer__format {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.links__format {
+    text-decoration: none;
+    color: white;
+}
+
+.links__format--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.none {
+    display: none;
+}
+    
+@media (max-width:1080px) {
+    .h2__format {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    header div nav {
+        display: none;
+    }
+
+    header div span {
+        display: inline-block;
+    }
+
+    /*Para mostrar el menu desplegable al pasar el mouse arriba de la imagen, falta que se quede estatico al clickear
+    header div span:hover ~ section {
+        display: block;
+    }*/
+
+    .img__medias {
+        display: none;
+    }
+
+    .div__media {
+        display: none;
+    }
+
+    .none {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px 0;
+    }
+}

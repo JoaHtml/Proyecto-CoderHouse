@@ -1,0 +1,47 @@
+body {
+    height: auto;
+}
+
+main {
+    background-color: #cecece;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main div h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+main div h3 {
+    padding:30px;
+}
+
+main div form p {
+    padding: 25px 0px;
+}
+
+main div form p input {
+    padding: 5px 0px;
+}
+
+.form__small {
+    display: none;
+}
+
+main div form div button {
+    padding: 5px;
+    border-radius: 10%;
+}
+
+@media (max-width: 768px) {
+    .form__big {
+        display: none;
+    }
+    .form__small {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,23 @@
+main {
+    background-color: #cecece;
+}
+
+main div h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.links__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main div a {
+    padding: 10px;
+}
+
+main div a img {
+    width: 100%;
+}
