@@ -7,6 +7,9 @@
 
 .somos {
     text-align: center;
+    padding: 50px 0;
+    max-width: 1000px;
+    margin: auto;
 }
 
 h1 {
@@ -24,6 +27,7 @@ h1 {
 .equipo {
     background-color: #cecece;
     text-align: center;
+    padding: 50px 0;
 }
 
 .equipo__titulo {
@@ -39,6 +43,16 @@ h1 {
 @media (max-width: 660px) {
     .equipo__format {
         justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .space {
+        display: none;
+    }
+
+    .somos {
+        padding: 0;
     }
 }
 
