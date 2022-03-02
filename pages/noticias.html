@@ -6,105 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equinoccio Lúdico</title>
     
-    <link rel="stylesheet" href="../css/style.css">
+    <!--Bootstrap/CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        
+    <!--Bootstrap/Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <!--link a hoja de estilo general css-->
+    <link rel="stylesheet" href="../css/styleboot.css">
+
+    <!--link a hoja de estilo individual css-->
     <link rel="stylesheet" href="../css/noticias.css">
 
 </head>
 <body>
     
-    <header>
-        <div>
-            <img src="../images/el_logo.png" width="87" alt="Logo Equinoccio Ludico" class="header__start"/>
-            <p><h2 class="header__start h2__format">Editorial Equinoccio Ludico</h2></p>
-            <div>
-                <div class="menu__text">MENU</div>
-                <div>
-                    <button class="buttonburguer"><img src="../images/menuButton.png" alt="menu hamburguesa" height="50px" class="img__format"></button>
-                    <!--Proximamente un menu desplegable al clickear la imagen menuButton.png-->
-                    <section class="burguer__list">
-                        <ul>
-                            <li><a href="../index.html">INICIO</a></li>
-                            <li><a href="../pages/juegos.html">JUEGOS</a></li>
-                            <li><a href="../pages/noticias.html">NOTICIAS</a></li>
-                            <li><a href="../pages/tiendas.html">TIENDAS</a></li>
-                            <li><a href="../pages/contacto.html">CONTACTO</a></li>
-                        </ul>
-                    <section>
-                    <!--aca termina el menu desplegable-->
-                </div>
-            </div>
-            <nav name="Barra de Navegación">
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="../pages/juegos.html">JUEGOS</a></li>
-                    <li><a href="../pages/noticias.html">NOTICIAS</a></li>
-                    <li><a href="../pages/tiendas.html">TIENDAS</a></li>
-                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
-                </ul>
+    <header class="container-fluid p-1 bg-primary">
+        <div class="row  align-items-center">
+            <img src="../images/el_logo.png" alt="Logo Equinoccio Ludico" class="img-fluid col-3 col-md-2" style="max-width: 87px;"/>
+            <div class="col-4 d-none d-lg-block"><h2 class="h6 text-light text-wrap">Editorial Equinoccio Ludico</h2></div>
+            <div class="col-4 d-none d-md-block d-lg-none"><h2 class="h6 text-light text-wrap">Equinoccio Ludico</h2></div>
+            
+            <nav name="Barra de Navegación" class="col-6 d-none d-md-block">
+                <ul class="nav justify-content-end flex-nowrap">
+                    <li class="nav-item ">
+                      <a class="nav-link text-white" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="../pages/juegos.html">JUEGOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning" aria-current="page" href="../pages/noticias.html">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/tiendas.html">TIENDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                  </ul>
             </nav>
+            <div class="dropdown col-9 text-end">
+                <button class="btn btn-primary dropdown-toggle d-sm-inline d-md-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div>MENU</div>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="../index.html">INICIO</a></li>
+                  <li><a class="dropdown-item" href="../pages/juegos.html">JUEGOS</a></li>
+                  <li><a class="dropdown-item" href="../pages/noticias.html">NOTICIAS</a></li>
+                  <a class="dropdown-item" href="../pages/tiendas.html">TIENDAS</a></li>
+                  <li><a class="dropdown-item" href="../pages/contacto.html">CONTACTO</a></li>
+                </ul>
+              </div>
          </div>  
     </header>
     
-    <main>
-        <div style="padding: 15px;">
-            <h2>NOVEDADES</h2>
+    <main class="pb-5">
+        <div class="p-3">
+            <h2 class="fw-bold fs-1 text-center">NOVEDADES</h2>
         </div>
-        <section class="section__format">
-            <div class="img1__grid">
-                <img src="../images/novedadWeb.jpg" alt="Noticia Reciente">
+        <section class="container row mx-auto border align-items-start overflow-auto p-2">
+            <div class="row col col-lg-12">
+                <div class="col-lg-3 text-center">
+                    <img src="../images/novedadWeb.jpg" alt="Noticia Reciente">
+                </div>
+                <div class="col-lg-9">
+                    <p>
+                        <sub>05/02/2022</sub>
+                    </p>
+                    <p>
+                        <h3> Mejoras al sitio</h3></p>
+                    <p>Para que tengan una mejor experiencia visitando nuestra web, progresamos y le pusimos estilo a la misma gracias a CSS</p>
+                </div>
             </div>
-            <div class="text1__grid">
-                <p>
-                    <sub>05/02/2022</sub>
-                </p>
-                <p>
-                    <h3> Mejoras al sitio</h3></p>
-                <p>Para que tengan una mejor experiencia visitando nuestra web, progresamos y le pusimos estilo a la misma gracias a CSS</p>
-            </div>
-            <div class="img2__grid">
-                <img src="../images/novedadWeb.jpg" alt="Noticia Antigua">
-            </div>
-            <div class="text2__grid">
-                <p>
-                    <sub>25/01/2022</sub>
-                </p>
-                <p>
-                    <h3> Inauguramos Sitio Web</h3></p>
-                <p>De la mano de nuestro diseñador Joaquín Carré, logramos inaugurar nuestro espacio de información sobre nuestra editorial y nuestros trabajos. Sean todos bienvenidos!</p>
+            <div class="row col col-lg-12 text-center">
+                <div class="col-lg-3">
+                    <img src="../images/novedadWeb.jpg" alt="Noticia Antigua">
+                </div>
+                <div class="col-lg-9">
+                    <p>
+                        <sub>25/01/2022</sub>
+                    </p>
+                    <p>
+                        <h3> Inauguramos Sitio Web</h3></p>
+                    <p>De la mano de nuestro diseñador Joaquín Carré, logramos inaugurar nuestro espacio de información sobre nuestra editorial y nuestros trabajos. Sean todos bienvenidos!</p>
+                </div>
             </div>
         </section>
         
-        <div style="padding: 15px;">
-            <h2>EVENTOS</h2>
+        <div class="p-3">
+            <h2 class="fw-bold fs-1 text-center">EVENTOS</h2>
         </div>
-        <section class="section__format">
-            <div class="img1__grid">
-                <img src="../images/juntada2.jpg" alt="Noticia Evento Reciente">
+        <section class="container row mx-auto border align-items-start overflow-auto p-2">
+            <div class="row col col-lg-12">
+                <div class="col-lg-3 text-center">
+                    <img src="../images/juntada2.jpg" alt="Noticia Evento Reciente">
+                </div>
+                <div class="col-lg-9">
+                    <p>
+                        <sub>01/02/2022</sub>
+                    </p>
+                    <p>
+                        <h3>Una jornada exitosa</h3>
+                    </p>
+                    <p>
+                        Los juegos de mesa llegaron a Villa Ramallo para quedarse. La primera juntada fue todo un éxito y por pedido de quienes concurrieron se celebrará una segunda juntada próximamente. Estén atentos a las novedades.
+                    </p>
+                </div>
             </div>
-            <div class="text1__grid">
-                <p>
-                    <sub>01/02/2022</sub>
-                </p>
-                <p>
-                    <h3>Una jornada exitosa</h3>
-                </p>
-                <p>
-                    Los juegos de mesa llegaron a Villa Ramallo para quedarse. La primera juntada fue todo un éxito y por pedido de quienes concurrieron se celebrará una segunda juntada próximamente. Estén atentos a las novedades.
-                </p>
-            </div>
-            <div class="img2__grid">
-                <img src="../images/juntada.jpg" alt="Noticia Evento Antigua" height="133px" width="200px">
-            </div>
-            <div class="text2__grid">
-                <p>
-                    <sub>28/01/2022</sub>
-                </p>
-                <p>
-                    <h3> Primera Juntada de Juegos de Mesa</h3>
-                </p>
-                <p>
-                    El día 30 de enero vamos a realizar nuestra primer juntada de Juegos de Mesa en el Club Marinero Panno (Marinero Panno 345) en la localidad de Villa Ramallo a partir de las 16hs hasta las 00hs. Habrá juegos editados y prototipos para todos los gustos. Estan todos invitados!
-                </p>
+            <div class="row col col-lg-12">
+                <div class="col-lg-3 text-center">
+                    <img src="../images/juntada.jpg" alt="Noticia Evento Antigua" height="133px" width="200px">
+                </div>
+                <div class="col-lg-9">
+                    <p>
+                        <sub>28/01/2022</sub>
+                    </p>
+                    <p>
+                        <h3> Primera Juntada de Juegos de Mesa</h3>
+                    </p>
+                    <p>
+                        El día 30 de enero vamos a realizar nuestra primer juntada de Juegos de Mesa en el Club Marinero Panno (Marinero Panno 345) en la localidad de Villa Ramallo a partir de las 16hs hasta las 00hs. Habrá juegos editados y prototipos para todos los gustos. Estan todos invitados!
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -112,29 +137,29 @@
        
     </main>
     
-    <footer>
-        <div class="footer__format">
-            <div class="img__medias">
+    <footer class="bg-primary bg-gradient lh-lg p-1">
+        <div class="row align-items-center">
+            <div class="col-md-1 col-lg-3 d-none d-md-block">
                 <img src="../images/el_logo.png" width="50" alt="Logo Editorial EL">
             </div>
-            <div class="links__format--flex">
-                <a href="../index.html" class="links__format">INICIO</a> | <a href="../pages/juegos.html" class="links__format">JUEGOS</a> | <a href="../pages/noticias.html" class="links__format">NOTICIAS</a> | <a href="../pages/tiendas.html" class="links__format">TIENDAS</a> | <a href="../pages/contacto.html" class="links__format">CONTACTO</a>
+            <div class="col-12 col-md-8 col-lg-6 text-center text-md-end text-lg-center">
+                <a href="../index.html" class="text-decoration-none text-black fw-bold">INICIO</a> | <a href="../pages/juegos.html" class="text-decoration-none text-black fw-bold">JUEGOS</a> | <a href="../pages/noticias.html" class="text-decoration-none text-black fw-bold">NOTICIAS</a> | <a href="../pages/tiendas.html" class="text-decoration-none text-black fw-bold">TIENDAS</a> | <a href="../pages/contacto.html" class="text-decoration-none text-black fw-bold">CONTACTO</a>
             </div>
-            <div class="div__media">
-                <a href="https://www.facebook.com/"><img src="../images/facebook.png" width="20" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.instagram.com/"><img src="../images/instagram.png" width="20" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.youtube.com/"><img src="../images/youtube.png" width="20" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+            <div class="col-3 row d-none d-md-block text-center">
+                <a class="col" href="https://www.facebook.com/"><img src="../images/facebook.png" width="25" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.instagram.com/"><img src="../images/instagram.png" width="25" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.youtube.com/"><img src="../images/youtube.png" width="25" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
             </div>
         </div>
-        <div>
-            <p class="none" style="align-content: center;">
-                <a href="https://www.facebook.com/"><img src="../images/facebook.png" width="20" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.instagram.com/"><img src="../images/instagram.png" width="20" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.youtube.com/"><img src="../images/youtube.png" width="20" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-            </p>
+        <div class="row d-block d-md-none text-center align-items-center">
+            
+                <a class="col" href="https://www.facebook.com/"><img src="../images/facebook.png" width="25" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.instagram.com/"><img src="../images/instagram.png" width="25" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.youtube.com/"><img src="../images/youtube.png" width="25" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+            
         </div>
         <div>
-            <p style="text-align: center;">© 2019 - Equinoccio Lúdico</p>
+            <p class="text-center">© 2019 - Equinoccio Lúdico</p>
         </div>
     </footer>
 </body>

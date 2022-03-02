@@ -34,7 +34,7 @@
                       <a class="nav-link text-white" href="../index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white" href="../pages/juegos.html">JUEGOS</a>
+                      <a class="nav-link active text-warning" aria-current="page" href="../pages/juegos.html">JUEGOS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="../pages/noticias.html">NOTICIAS</a>
@@ -43,7 +43,7 @@
                         <a class="nav-link text-white" href="../pages/tiendas.html">TIENDAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-warning" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+                        <a class="nav-link text-white" href="../pages/contacto.html">CONTACTO</a>
                     </li>
                   </ul>
             </nav>
@@ -63,14 +63,14 @@
     </header>
     
     <main>
-        <div style="padding: 15px;">
-            <h2>Nuestros Juegos</h2>
+        <div class="p-3">
+            <h2 class="fw-bold fs-1 text-center">NUESTROS JUEGOS</h2>
         </div>
-        <div class="juegos__grid">
-            <div class="img1">
-                <img src="../images/Robomeke.jpg" alt="Foto Juego Robomeke" style="border-radius: 15px; border: 5px solid rgba(0, 109, 117, 0.438);" class="img__mediaj">
+        <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-12">
+                <img src="../images/Robomeke.jpg" alt="Foto Juego Robomeke" style="border-radius: 15px; border: 5px solid rgba(0, 109, 117, 0.438);" class="mw-100 img__animation">
             </div>
-            <div class="text1">
+            <div class="col-lg-6 col-md-8 col-sm-12 mw-100">
                 <p><h3>Ficha Técnica</h3></p>
                 <p><strong>Nombre: </strong>Robomeke</p>
                 <p><strong>Tipo: </strong>Estrategia y Táctico</p>
@@ -79,7 +79,12 @@
                 <p><strong>Tiempo estimado: </strong>45 minutos</p>
                 <p><strong>Resumen: </strong>Cada jugador representa una raza y manejará un Robot que deberá enfrentarse a sus rivales para obtener la Caja de Suministros que se coloca al centro del tablero y volver a su base sin que nadie lo lance hacia el precipicio o robe su botín. Para ello podrás hackear las plataformas y mejorar tu Robot para lograr tu objetivo.</p>
             </div>
-            <div class="text2">
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-4 col-sm-12">
+                <img src="../images/pancu.jpg" alt="Foto Juego Pancú" style="border-radius: 15px; border: 5px solid rgba(0, 109, 117, 0.438);" class="mw-100 img__animation">
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12 mw-100">
                 <p><h3>Ficha Técnica</h3></p>
                 <p><strong>Nombre: </strong>Pancú</p>
                 <p><strong>Tipo: </strong>Filler</p>
@@ -88,37 +93,34 @@
                 <p><strong>Tiempo estimado: </strong>30 minutos</p>
                 <p><strong>Resumen: </strong>Arma los mejores pancús (pan con ingredientes) para obtener la mejor reputación sobre tus compañeros de laburo. Pero ojo! Tus rivales podrán ponerte palos en la rueda quemando o eliminando los panes que vayas a usar, obteniendo ingredientes de dudosa procedencia o cubriendo los ingredientes que necesites y no puedas obtener.</p>
             </div>
-            <div class="img2">
-                <img src="../images/pancu.jpg" alt="Foto Juego Pancú" style="border-radius: 15px; border: 5px solid rgba(0, 109, 117, 0.438);" class="img__mediaj">
-            </div>
         </div>
         <br />
         <br />
     </main>
     
-    <footer>
-        <div class="footer__format">
-            <div class="img__medias">
+    <footer class="bg-primary bg-gradient lh-lg p-1">
+        <div class="row align-items-center">
+            <div class="col-md-1 col-lg-3 d-none d-md-block">
                 <img src="../images/el_logo.png" width="50" alt="Logo Editorial EL">
             </div>
-            <div class="links__format--flex">
-                <a href="../index.html" class="links__format">INICIO</a> | <a href="../pages/juegos.html" class="links__format">JUEGOS</a> | <a href="../pages/noticias.html" class="links__format">NOTICIAS</a> | <a href="../pages/tiendas.html" class="links__format">TIENDAS</a> | <a href="../pages/contacto.html" class="links__format">CONTACTO</a>
+            <div class="col-12 col-md-8 col-lg-6 text-center text-md-end text-lg-center">
+                <a href="../index.html" class="text-decoration-none text-black fw-bold">INICIO</a> | <a href="../pages/juegos.html" class="text-decoration-none text-black fw-bold">JUEGOS</a> | <a href="../pages/noticias.html" class="text-decoration-none text-black fw-bold">NOTICIAS</a> | <a href="../pages/tiendas.html" class="text-decoration-none text-black fw-bold">TIENDAS</a> | <a href="../pages/contacto.html" class="text-decoration-none text-black fw-bold">CONTACTO</a>
             </div>
-            <div class="div__media">
-                <a href="https://www.facebook.com/"><img src="../images/facebook.png" width="20" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.instagram.com/"><img src="../images/instagram.png" width="20" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.youtube.com/"><img src="../images/youtube.png" width="20" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+            <div class="col-3 row d-none d-md-block text-center">
+                <a class="col" href="https://www.facebook.com/"><img src="../images/facebook.png" width="25" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.instagram.com/"><img src="../images/instagram.png" width="25" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.youtube.com/"><img src="../images/youtube.png" width="25" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
             </div>
         </div>
-        <div>
-            <p class="none" style="align-content: center;">
-                <a href="https://www.facebook.com/"><img src="../images/facebook.png" width="20" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.instagram.com/"><img src="../images/instagram.png" width="20" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.youtube.com/"><img src="../images/youtube.png" width="20" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-            </p>
+        <div class="row d-block d-md-none text-center align-items-center">
+            
+                <a class="col" href="https://www.facebook.com/"><img src="../images/facebook.png" width="25" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.instagram.com/"><img src="../images/instagram.png" width="25" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.youtube.com/"><img src="../images/youtube.png" width="25" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+            
         </div>
         <div>
-            <p style="text-align: center;">© 2019 - Equinoccio Lúdico</p>
+            <p class="text-center">© 2019 - Equinoccio Lúdico</p>
         </div>
     </footer>
 </body>

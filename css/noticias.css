@@ -2,62 +2,6 @@ main {
     background-color: #cecece;
 }
 
-main div h2 {
-    text-align: center;
-    font-size: 30px;
-}
-
-.section__format {
-    display: grid;
-    grid-template-areas: 
-    "img1 text1 text1 text1 text1"
-    "img2 text2 text2 text2 text2";
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: auto;
-    gap: 10px;
-    background-color: #cecece; 
-    overflow: auto; 
-    height: auto; 
-    border: 3px solid rgba(0, 126, 175, 0.5);
-    margin: 10px;
-    align-items: center;
-}
-
-.img1__grid {
-    grid-area: img1;
-    justify-self: end;
-}
-
-.text1__grid {
-    grid-area: text1;
-}
-
-.img2__grid {
-    grid-area: img2;
-    justify-self: end;
-}
-
-.text2__grid {
-    grid-area: text2;
-}
-
-@media (max-width: 768px) {
-    .section__format {
-        grid-template-areas: 
-        "img1 img2"
-        "text1 text2";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px 1fr;
-        overflow: scroll;
-        text-align: justify;
-        align-items: stretch;
-        column-gap: 50px;
-        padding: 0 30px;
-    }
-    .img1__grid {
-        justify-self: center;
-    }
-    .img2__grid {
-        justify-self: center;
-    }
+main section {
+    height: 500px;
 }
