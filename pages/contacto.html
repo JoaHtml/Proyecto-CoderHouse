@@ -6,135 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equinoccio Lúdico</title>
 
-    <link rel="stylesheet" href="../css/style.css">
+    <!--Bootstrap/CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    
+    <!--Bootstrap/Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <!--link a hoja de estilo general css-->
+    <link rel="stylesheet" href="../css/styleboot.css">
+
+    <!--link a hoja de estilo individual css-->
     <link rel="stylesheet" href="../css/contacto.css">
 
 </head>
 <body>
     
-    <header>
-        <div>
-            <img src="../images/el_logo.png" width="87" alt="Logo Equinoccio Ludico" class="header__start"/>
-            <p><h2 class="header__start h2__format">Editorial Equinoccio Ludico</h2></p>
-            <div>
-                <div class="menu__text">MENU</div>
-                <div>
-                    <button class="buttonburguer"><img src="../images/menuButton.png" alt="menu hamburguesa" height="50px" class="img__format"></button>
-                    <!--Proximamente un menu desplegable al clickear la imagen menuButton.png-->
-                    <section class="burguer__list">
-                        <ul>
-                            <li><a href="../index.html">INICIO</a></li>
-                            <li><a href="../pages/juegos.html">JUEGOS</a></li>
-                            <li><a href="../pages/noticias.html">NOTICIAS</a></li>
-                            <li><a href="../pages/tiendas.html">TIENDAS</a></li>
-                            <li><a href="../pages/contacto.html">CONTACTO</a></li>
-                        </ul>
-                    <section>
-                    <!--aca termina el menu desplegable-->
-                </div>
-            </div>
-            <nav name="Barra de Navegación">
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="../pages/juegos.html">JUEGOS</a></li>
-                    <li><a href="../pages/noticias.html">NOTICIAS</a></li>
-                    <li><a href="../pages/tiendas.html">TIENDAS</a></li>
-                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
-                </ul>
+    <header class="container-fluid p-1 bg-primary">
+        <div class="row  align-items-center">
+            <img src="../images/el_logo.png" alt="Logo Equinoccio Ludico" class="img-fluid col-3 col-md-2" style="max-width: 87px;"/>
+            <div class="col-4 d-none d-lg-block"><h2 class="h6 text-light text-wrap">Editorial Equinoccio Ludico</h2></div>
+            <div class="col-4 d-none d-md-block d-lg-none"><h2 class="h6 text-light text-wrap">Equinoccio Ludico</h2></div>
+            
+            <nav name="Barra de Navegación" class="col-6 d-none d-md-block">
+                <ul class="nav justify-content-end flex-nowrap">
+                    <li class="nav-item ">
+                      <a class="nav-link text-white" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="../pages/juegos.html">JUEGOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/noticias.html">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/tiendas.html">TIENDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                  </ul>
             </nav>
+            <div class="dropdown col-9 text-end">
+                <button class="btn btn-primary dropdown-toggle d-sm-inline d-md-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div>MENU</div>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="../index.html">INICIO</a></li>
+                  <li><a class="dropdown-item" href="../pages/juegos.html">JUEGOS</a></li>
+                  <li><a class="dropdown-item" href="../pages/noticias.html">NOTICIAS</a></li>
+                  <a class="dropdown-item" href="../pages/tiendas.html">TIENDAS</a></li>
+                  <li><a class="dropdown-item" href="../pages/contacto.html">CONTACTO</a></li>
+                </ul>
+              </div>
          </div>  
     </header>
     
-    <main>
-        <div style="text-align: center;">
-            <h2 style="text-align: center; font-size: 30px;">CONTACTANOS</h2>
+    <main class="p-4 d-flex flex-column">
+        <div class="text-center m-4">
+            <h2 class="text-center fs-2 fw-bold">CONTACTANOS</h2>
         </div>
-        <div style="text-align: center;">
+        <div class="text-center p-2">
             <h3>Por cualquier consulta envianos un mensaje aquí o escribinos a <div style="display: inline;"><a href="../pages/contacto.html">equiludi@gmail.com</a></div></h3>
         </div>
-        <div style="text-align: center;">
-            <form action="../pages/contacto.html" autocomplete="on" class="form__big">
-                <p>
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" name="Nombre completo" id="nombre" size="89" >
-                </p>
-                <p>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="e-mail" id="email" size="100">
-                </p>
-                <p>
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" name="asunto" id="asunto" size="100">
-                </p>
-                <p>
-                    <label for="mensaje">Mensaje:</label>
-                    <input type="text" name="mensaje" id="mensaje" size="99" style="height: 100px;">
-                </p>
-                    <div style="text-align: center;"> 
-                        <button type="reset">
-                            Resetear
-                        </button>
-                        <button type="submit">
-                            Enviar
-                        </button>   
+        <div class="container row mt-4 mx-auto">            
+            <form action="../pages/contacto.html" class="col-lg-6 col-md-8 col-sm-12 mx-auto" autocomplete="on">
+                <div class="row">
+                    <div class="col m-4">
+                        <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Nombre completo">
                     </div>
-                </form>
-            <form action="../pages/contacto.html" autocomplete="on" class="form__small">
-                <p>
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" name="Nombre completo" id="nombre">
-                </p>
-                <p>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="e-mail" id="email">
-                </p>
-                <p>
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" name="asunto" id="asunto">
-                </p>
-                <p>
-                    <label for="mensaje">Mensaje:</label>
-                    <input type="text" name="mensaje" id="mensaje">
-                </p>
-                    <div style="text-align: center;"> 
-                        <button type="reset">
-                            Resetear
-                        </button>
-                        <button type="submit">
-                            Enviar
-                        </button>   
+                    <div class="col m-4">
+                        <input type="email" class="form-control" placeholder="E-mail" aria-label="Email">
                     </div>
-                    <p style="text-align: center;">
-                        <sub>*Una vez enviado el mensaje la página se recargará</sub>
-                    </p>
-                </p>
+                </div>
+                <div class="row">
+                    <div class="col m-4">
+                        <input type="text" class="form-control" placeholder="Asunto" aria-label="Asunto">
+                    </div>
+                </div>
+                <div class="row">    
+                    <div class="col m-4">
+                        <textarea class="d-block form-control" placeholder="Mensaje"></textarea>
+                    </div>
+                </div>
+                <div class="d-grid gap-3 d-sm-block text-center">
+                    <button class="btn btn-primary" type="reset">Resetear</button>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
             </form>
         </div>
     </main>
     
-    <footer>
-        <div class="footer__format">
-            <div class="img__medias">
+    <footer class="bg-primary bg-gradient lh-lg p-1">
+        <div class="row align-items-center">
+            <div class="col-md-1 col-lg-3 d-none d-md-block">
                 <img src="../images/el_logo.png" width="50" alt="Logo Editorial EL">
             </div>
-            <div class="links__format--flex">
-                <a href="../index.html" class="links__format">INICIO</a> | <a href="../pages/juegos.html" class="links__format">JUEGOS</a> | <a href="../pages/noticias.html" class="links__format">NOTICIAS</a> | <a href="../pages/tiendas.html" class="links__format">TIENDAS</a> | <a href="../pages/contacto.html" class="links__format">CONTACTO</a>
+            <div class="col-12 col-md-8 col-lg-6 text-center text-md-end text-lg-center">
+                <a href="../index.html" class="text-decoration-none text-black fw-bold">INICIO</a> | <a href="../pages/juegos.html" class="text-decoration-none text-black fw-bold">JUEGOS</a> | <a href="../pages/noticias.html" class="text-decoration-none text-black fw-bold">NOTICIAS</a> | <a href="../pages/tiendas.html" class="text-decoration-none text-black fw-bold">TIENDAS</a> | <a href="../pages/contacto.html" class="text-decoration-none text-black fw-bold">CONTACTO</a>
             </div>
-            <div class="div__media">
-                <a href="https://www.facebook.com/"><img src="../images/facebook.png" width="20" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.instagram.com/"><img src="../images/instagram.png" width="20" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.youtube.com/"><img src="../images/youtube.png" width="20" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+            <div class="col-3 row d-none d-md-block text-center">
+                <a class="col" href="https://www.facebook.com/"><img src="../images/facebook.png" width="25" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.instagram.com/"><img src="../images/instagram.png" width="25" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.youtube.com/"><img src="../images/youtube.png" width="25" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
             </div>
         </div>
-        <div>
-            <p class="none" style="align-content: center;">
-                <a href="https://www.facebook.com/"><img src="../images/facebook.png" width="20" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.instagram.com/"><img src="../images/instagram.png" width="20" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a href="https://www.youtube.com/"><img src="../images/youtube.png" width="20" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-            </p>
+        <div class="row d-block d-md-none text-center align-items-center">
+            
+                <a class="col" href="https://www.facebook.com/"><img src="../images/facebook.png" width="25" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.instagram.com/"><img src="../images/instagram.png" width="25" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.youtube.com/"><img src="../images/youtube.png" width="25" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+            
         </div>
         <div>
-            <p style="text-align: center;">© 2019 - Equinoccio Lúdico</p>
+            <p class="text-center">© 2019 - Equinoccio Lúdico</p>
         </div>
     </footer>
 </body>

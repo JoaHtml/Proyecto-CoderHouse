@@ -3,47 +3,25 @@
     background-size: cover;
     background-position: center;
     height: 500px;
+    overflow: auto;
 }
 
 .somos {
-    text-align: center;
-    padding: 50px 0;
     max-width: 1000px;
-    margin: auto;
 }
 
-h1 {
-    color: white; 
-    font-weight: bold; 
-    text-shadow: 2px 2px 4px black;
-}
-
-.word__color {
-    display: inline;
-    font-size: 30px;
-    color: rgb(68, 149, 255);
+.text__shadow {
+    text-shadow: 2px 3px 2px black;
 }
 
 .equipo {
     background-color: #cecece;
     text-align: center;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .equipo__titulo {
     font-size: 30px;
-}
-
-.equipo__format {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-@media (max-width: 660px) {
-    .equipo__format {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 500px) {
