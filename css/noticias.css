@@ -5,3 +5,12 @@ main {
 main section {
     height: 500px;
 }
+
+.news__border {
+    border: 10px double royalblue;
+}
+
+.events__border {
+    border: 10px double blueviolet
+}
+

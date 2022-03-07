@@ -22,41 +22,41 @@
 </head>
 <body>
     
-    <header class="container-fluid p-1 bg-primary">
-        <div class="row  align-items-center">
-            <img src="./images/el_logo.png" alt="Logo Equinoccio Ludico" class="img-fluid col-3 col-md-2" style="max-width: 87px;"/>
+    <header class="container-fluid p-1 bg-primary sticky-top">
+        <div class="row-fluid gap-1 d-flex align-items-center">
+            <img src="./images/el_logo.png" alt="Logo Equinoccio Ludico" class="img-fluid col-3 col-md-2" style="max-width: 64px;"/>
             <div class="col-4 d-none d-lg-block"><h2 class="h6 text-light text-wrap">Editorial Equinoccio Ludico</h2></div>
             <div class="col-4 d-none d-md-block d-lg-none"><h2 class="h6 text-light text-wrap">Equinoccio Ludico</h2></div>
             
             <nav name="Barra de Navegación" class="col-6 d-none d-md-block">
                 <ul class="nav justify-content-end flex-nowrap">
-                    <li class="nav-item ">
-                      <a class="nav-link active text-warning" aria-current="page" href="./index.html">INICIO</a>
+                    <li class="nav-item">
+                      <a class="nav-link active text-warning passme" aria-current="page" href="./index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white" href="./pages/juegos.html">JUEGOS</a>
+                      <a class="nav-link text-white passme" href="./pages/juegos.html">JUEGOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/noticias.html">NOTICIAS</a>
+                        <a class="nav-link text-white passme" href="./pages/noticias.html">NOTICIAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/tiendas.html">TIENDAS</a>
+                        <a class="nav-link text-white passme" href="./pages/tiendas.html">TIENDAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/contacto.html">CONTACTO</a>
+                        <a class="nav-link text-white passme" href="./pages/contacto.html">CONTACTO</a>
                     </li>
                   </ul>
             </nav>
-            <div class="dropdown col-9 text-end">
+            <div class="dropdown col-9 text-end m-auto">
                 <button class="btn btn-primary dropdown-toggle d-sm-inline d-md-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   <div>MENU</div>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="./index.html">INICIO</a></li>
-                  <li><a class="dropdown-item" href="./pages/juegos.html">JUEGOS</a></li>
-                  <li><a class="dropdown-item" href="./pages/noticias.html">NOTICIAS</a></li>
-                  <a class="dropdown-item" href="./pages/tiendas.html">TIENDAS</a></li>
-                  <li><a class="dropdown-item" href="./pages/contacto.html">CONTACTO</a></li>
+                <ul class="dropdown-menu d-md-none" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item passme" href="./index.html">INICIO</a></li>
+                  <li><a class="dropdown-item passme" href="./pages/juegos.html">JUEGOS</a></li>
+                  <li><a class="dropdown-item passme" href="./pages/noticias.html">NOTICIAS</a></li>
+                  <li><a class="dropdown-item passme" href="./pages/tiendas.html">TIENDAS</a></li>
+                  <li><a class="dropdown-item passme" href="./pages/contacto.html">CONTACTO</a></li>
                 </ul>
               </div>
          </div>  
@@ -64,7 +64,7 @@
     
     <main>
         <section class="heroImg lh-sm">
-            <div class="somos text-center p-1 m-auto mh-100">
+            <div class="somos text-center m-auto p-1 mh-100">
                 <p><h1 class="text-white fw-bold text__shadow">Somos <div class="d-inline fs-1 fw-bold text-primary">E</div>quinoccio <div class="d-inline fs-1 fw-bold text-primary">L</div>údico</h1></p>
                 <img src="https://emojis.slackmojis.com/emojis/images/1517351693/3463/meeple.png?1517351693" alt="meeple icon" width="40px">
                 <p class="text-white fw-bold text__shadow">Incentivados por hacer algo distinto en plena pandemia de Covid-19, un 21 de Septiembre de 2019, decidimos pasar de jugar juegos de mesa a crearlos. Y desde entonces comenzamos nuestro recorrido de aprendizaje, diversión, creación y esfuerzo para lograr crear piezas de arte que disfrutase cada jugón de tener en su ludoteca.</p>
@@ -81,18 +81,18 @@
             <div class="d-flex justify-content-center justify-content-md-evenly flex-wrap">
                 <div class="lh-lg p-3">
                     <div>
-                        <img src="./images/disenadorJoaquin.png" alt="Foto diseñador de juegos" class="img__mediam">
+                        <img src="./images/disenadorJoaquin.png" alt="Foto diseñador de juegos" class="img__mediam img__animation">
                     </div>
                     <div class="h2 p-1 fw-bold">Joaquín Carré</div>
                     <div>Game Designer</div>
                 </div>
             
                 <div>
-                <!--separación entre imagenes-->
+               
                 </div>
                 <div class="lh-lg p-3">
                     <div>
-                        <img src="./images/disenadoraNoemi.png" alt="Foto diseñadora gráfica" class="img__mediam">
+                        <img src="./images/disenadoraNoemi.png" alt="Foto diseñadora gráfica" class="img__mediam img__animation">
                     </div>
                     <div class="h2 p-1 fw-bold">Noemí Salxia</div>
                     <div>Diseñadora Gráfica</div>
@@ -102,24 +102,24 @@
     </main>
 
     <footer class="bg-primary bg-gradient lh-lg p-1">
-        <div class="row align-items-center">
-            <div class="col-md-1 col-lg-3 d-none d-md-block">
+        <div class="row-fluid d-flex align-items-center">
+            <div class="col-md-2 col-lg-3 d-none d-md-block">
                 <img src="./images/el_logo.png" width="50" alt="Logo Editorial EL">
             </div>
-            <div class="col-12 col-md-8 col-lg-6 text-center text-md-end text-lg-center">
+            <div class="col-12 col-md-7 col-lg-6 text-center">
                 <a href="./index.html" class="text-decoration-none text-black fw-bold">INICIO</a> | <a href="./pages/juegos.html" class="text-decoration-none text-black fw-bold">JUEGOS</a> | <a href="./pages/noticias.html" class="text-decoration-none text-black fw-bold">NOTICIAS</a> | <a href="./pages/tiendas.html" class="text-decoration-none text-black fw-bold">TIENDAS</a> | <a href="./pages/contacto.html" class="text-decoration-none text-black fw-bold">CONTACTO</a>
             </div>
-            <div class="col-3 row d-none d-md-block text-center">
-                <a class="col" href="https://www.facebook.com/"><img src="./images/facebook.png" width="25" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a class="col" href="https://www.instagram.com/"><img src="./images/instagram.png" width="25" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a class="col" href="https://www.youtube.com/"><img src="./images/youtube.png" width="25" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+            <div class="col-3 row d-none d-md-block text-center m-auto">
+                <a class="col" href="https://www.facebook.com/"><img src="./images/facebook.png" width="25" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;" class="zoomin"></a>
+                <a class="col" href="https://www.instagram.com/"><img src="./images/instagram.png" width="25" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;" class="zoomin"></a>
+                <a class="col" href="https://www.youtube.com/"><img src="./images/youtube.png" width="25" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;" class="zoomin"></a>
             </div>
         </div>
-        <div class="row d-block d-md-none text-center align-items-center">
+        <div class="row-fluid d-block d-md-none text-center align-items-center">
             
-                <a class="col" href="https://www.facebook.com/"><img src="./images/facebook.png" width="25" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a class="col" href="https://www.instagram.com/"><img src="./images/instagram.png" width="25" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
-                <a class="col" href="https://www.youtube.com/"><img src="./images/youtube.png" width="25" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;"></a>
+                <a class="col" href="https://www.facebook.com/"><img src="./images/facebook.png" width="25" alt="Logo Facebook" style="border: 5px double rgb(0, 0, 0); padding: 2px;" class="zoomin"></a>
+                <a class="col" href="https://www.instagram.com/"><img src="./images/instagram.png" width="25" alt="Logo Instagram" style="border: 5px double rgb(0, 0, 0); padding: 2px;" class="zoomin"></a>
+                <a class="col" href="https://www.youtube.com/"><img src="./images/youtube.png" width="25" alt="Logo Youtube" style="border: 5px double rgb(0, 0, 0); padding: 2px;" class="zoomin"></a>
             
         </div>
         <div>

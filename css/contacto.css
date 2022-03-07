@@ -6,3 +6,11 @@ main {
     background-color: #cecece;
     height: 800px;
 }
+
+.input__bg {
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid black;
+    border-radius: 0%;
+    outline: none;
+}
