@@ -1,0 +1,9 @@
+@media (max-width: 528px) {
+    .font__size p {
+        @include fontsize (12px, normal);
+    }
+
+    h3 {
+        @include fontsize (17px, normal);
+    }
+}

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mw__extend {
+    max-width: 1000px;
+    margin: auto;
+}
+
+@mixin fontsize ($fontsize, $fontbold) {
+    font-size: $fontsize;
+    font-weight: $fontbold;
+}

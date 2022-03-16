@@ -1,0 +1,49 @@
+.main__bg {
+    background-color: $backgroundprimary;
+
+    .section__height {
+        height: 500px;
+    }
+
+    .news__border {
+        border: 10px double royalblue;
+    }
+    
+    .events__border {
+        border: 10px double blueviolet;
+    }
+
+    .tiendas__img a {
+        padding: 10px;
+
+        img {
+            width: 100%;
+        }
+
+        .img__select {
+            transform: translateY(0px);
+            transition: transform 0.5s ease;
+        }
+        
+        .img__select:hover {
+            transform: translateY(-15px);
+        }
+    }
+}
+
+.container__format {
+    @extend .mw__extend;
+    padding: 20px;
+}
+
+@each $rrss, $border in $border-rrss {
+    .btn-#{$rrss} {
+        border: $border;
+    }
+}
+
+@each $rrss, $padding in $padding-rrss {
+    .btn-#{$rrss} {
+        padding: $padding;
+    }
+}
