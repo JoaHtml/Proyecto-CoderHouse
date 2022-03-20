@@ -1,0 +1,18 @@
+{
+  "name": "3ra-entrega",
+  "description": "Proyecto para la carrera Desarrollador Web Full Stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "auto": "sass style.scss css/style.css -w --no-source-map -s compressed"
+  },
+  "author": "Joaquín Carré",
+  "license": "ISC",
+  
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
