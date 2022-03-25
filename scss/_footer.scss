@@ -6,17 +6,3 @@
 .zoomin:hover {
     transform: scale(2);
 }
-
-.img__animation {
-    animation-name: img__effect;
-    animation-timing-function: linear;
-    animation-duration: 0.5s;
-}
-
-@keyframes img__effect {
-    0% {transform: scale(0);}
-    25% {transform: scale(0.25);}
-    50% {transform: scale(0.5);}
-    75% {transform: scale(0.75);}
-    100% {transform: scale(1);}
-}

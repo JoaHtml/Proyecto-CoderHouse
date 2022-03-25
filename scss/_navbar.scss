@@ -1,22 +1,35 @@
 .passme {
     background-color: transparent;
     transition: background-color 0.8s;
+
+    &:hover {
+        background-color: rgb(0, 60, 255);
+    }
 }
 
-.passme:hover {
-    background-color: rgb(0, 60, 255);
+.dropdownmenu__margin--reset {
+    margin: auto 0px auto auto;
+
+    .dropdown-menu {
+        background-color: rgb(0, 116, 211);
+        transition: transform 0.5s;
+        transform: scale(0.2);
+    
+        li a {
+            color: white;
+        }
+    }
+    
+    #dropdownMenuButton1:active {
+        background-color: rgb(0, 60, 255);
+    }
 }
 
-.dropdown-menu {
-    background-color: rgb(0, 116, 211);
-    transition: transform 0.5s;
-    transform: scale(0.2);
-}
+.text__margin {
+    margin: auto auto auto 10px;
 
-.dropdown-menu li a {
-    color: white;
-}
-
-#dropdownMenuButton1:active {
-    background-color: rgb(0, 60, 255);
+    &--reset {
+        margin: 0;
+        font-size: 24px;
+    }
 }

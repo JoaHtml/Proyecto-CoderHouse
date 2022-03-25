@@ -23,6 +23,7 @@
         .img__select {
             transform: translateY(0px);
             transition: transform 0.5s ease;
+            max-height: 100px;
         }
         
         .img__select:hover {
