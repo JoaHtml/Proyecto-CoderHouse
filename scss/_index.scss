@@ -17,7 +17,7 @@
 }
 
 .equipo {
-    background-color: $backgroundprimary;
+    @extend .main__bg;
     text-align: center;
     padding: 30px 0;
 

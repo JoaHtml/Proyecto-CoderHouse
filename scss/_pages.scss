@@ -1,18 +1,6 @@
 .main__bg {
     background-color: $backgroundprimary;
 
-    .section__height {
-        height: 500px;
-    }
-
-    .news__border {
-        border: 10px double royalblue;
-    }
-    
-    .events__border {
-        border: 10px double blueviolet;
-    }
-
     .tiendas__img a {
         padding: 10px;
 
@@ -30,6 +18,10 @@
             transform: translateY(-15px);
         }
     }
+}
+
+.bmain__bg {
+    background-color: $backgroundsecondary
 }
 
 .container__format {

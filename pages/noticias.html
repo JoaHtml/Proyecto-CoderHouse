@@ -61,79 +61,141 @@
          </div>  
     </header>
         
-    <main class="pb-5 main__bg">
-        <div class="container__format">
+    <main>
+        <section class="main__bg bg__height border-bottom border-secondary border-2">
             <div class="p-3">
-                <h1 class="fw-bold text-center">NOVEDADES</h1>
+                <h1 class="fw-bold text-center">-NOVEDADES-</h1>
             </div>
-            <section class="container row mx-auto news__border align-items-start align-items-lg-center overflow-auto p-2 section__height">
-                <div class="row col col-lg-12">
-                    <div class="col-lg-3 text-center">
-                        <img src="../images/novedadWeb.jpg" alt="Noticia Reciente">
-                    </div>
-                    <div class="col-lg-9">
-                        <p class="text-center text-lg-start">
-                            <sub>05/02/2022</sub>
-                        </p>
-                        <p>
-                            <h3 class="fw-bold"> Mejoras al sitio</h3></p>
-                        <p>Para que tengan una mejor experiencia visitando nuestra web, progresamos y le pusimos estilo a la misma gracias a CSS</p>
-                    </div>
+            <article class="container row mx-auto overflow-auto p-2 container__format">
+                <div class="col news__format mx-auto">
+                    <ul class="d-flex flex-column bg-white p-0">
+                        <li class="list-group">
+                            <img src="../images/novedadWeb.jpg" alt="Noticia Reciente">
+                        </li>
+                        <div class="news__paddingbox">
+                            <li class="list-group">
+                                <p class="px-3">
+                                    <sub class="bg-primary text-white p-1 rounded">26/03/2022</sub>
+                                </p>
+                            </li>
+                            <li class="list-group">
+                                <p>
+                                    <h3 class="fw-bold text-primary px-3">Progresando...</h3>
+                                </p>
+                            </li>
+                            <li class="list-group">
+                                <p class="px-3">Finalmente tenemos un sitio estable y más agradable a la vista siendo este el proyecto final del curso de Desarrollo Web. Próximamente se añadirán varias mejoras más al mismo.</p>
+                            </li>
+                        </div>
+                    </ul>
                 </div>
-                <div class="row col col-lg-12">
-                    <div class="col-lg-3 text-center">
-                        <img src="../images/novedadWeb.jpg" alt="Noticia Antigua">
-                    </div>
-                    <div class="col-lg-9">
-                        <p class="text-center text-lg-start">
-                            <sub>25/01/2022</sub>
-                        </p>
-                        <p>
-                            <h3 class="fw-bold"> Inauguramos Sitio Web</h3>
-                        </p>
-                        <p>De la mano de nuestro diseñador Joaquín Carré, logramos inaugurar nuestro espacio de información sobre nuestra editorial y nuestros trabajos. Sean todos bienvenidos!</p>
-                    </div>
+                <div class="col news__format mx-auto">
+                    <ul class="d-flex flex-column bg-white p-0">
+                        <li class="list-group">
+                            <img src="../images/novedadWeb.jpg" alt="Noticia Antigua">
+                        </li>
+                        <div class="news__paddingbox">
+                            <li class="list-group">
+                                <p class="px-3">
+                                    <sub class="bg-primary text-white p-1 rounded">05/02/2022</sub>
+                                </p>
+                            </li>
+                            <li class="list-group">
+                                <p>
+                                    <h3 class="fw-bold text-primary px-3"> Mejoras al sitio</h3>
+                                </p>
+                            </li>
+                            <li class="list-group">
+                                <p class="px-3">Para que tengan una mejor experiencia visitando nuestra web, progresamos y le pusimos estilo a la misma gracias a CSS</p>
+                            </li>
+                        </div>
+                    </ul>
                 </div>
-            </section>
-            
+                <div class="col news__format mx-auto">
+                    <ul class="d-flex flex-column bg-white p-0">
+                        <li class="list-group">
+                            <img src="../images/novedadWeb.jpg" alt="Noticia Más Antigua">
+                        </li>
+                        <div class="news__paddingbox">
+                            <li class="list-group">
+                                <p class="px-3">
+                                    <sub class="bg-primary text-white p-1 rounded">25/01/2022</sub>
+                                </p>
+                            </li>
+                            <li class="list-group">
+                                <p>
+                                    <h3 class="fw-bold text-primary px-3">Inauguramos Sitio Web</h3>
+                                </p>
+                            </li>
+                            <li class="list-group">
+                                <p class="px-3">De la mano de nuestro diseñador Joaquín Carré, logramos inaugurar nuestro espacio de información sobre nuestra editorial y nuestros trabajos. Sean todos bienvenidos!</p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </article>
+            <div class="text-center">
+                <!--link a la misma página pero que, próximamente, se linkeará con una página con todas las noticias y que desde noticias.html solo se vean las más recientes-->
+                <a href="../pages/noticias.html"><button class="rounded-pill p-2 bg-primary fw-bold text-white border-0">Más Noticias</button></a>
+                <p class="text-danger fw-bold">proximamente...</p>
+            </div>
+        </section>
+        <section class="bmain__bg bg__height">    
             <div class="p-3">
-                <h2 class="fw-bold fs-1 text-center">EVENTOS</h2>
+                <h2 class="fw-bold fs-1 text-center">-EVENTOS-</h1>
             </div>
-            <section class="container row mx-auto events__border align-items-start align-items-lg-center overflow-auto p-2 section__height">
-                <div class="row col col-lg-12">
-                    <div class="col-lg-3 text-center">
-                        <img src="../images/juntada2.jpg" alt="Noticia Evento Reciente">
-                    </div>
-                    <div class="col-lg-9">
-                        <p class="text-center text-lg-start">
-                            <sub>01/02/2022</sub>
-                        </p>
-                        <p>
-                            <h3 class="fw-bold">Una jornada exitosa</h3>
-                        </p>
-                        <p>
-                            Los juegos de mesa llegaron a Villa Ramallo para quedarse. La primera juntada fue todo un éxito y por pedido de quienes concurrieron se celebrará una segunda juntada próximamente. Estén atentos a las novedades.
-                        </p>
-                    </div>
+            <article class="container row mx-auto overflow-auto p-2 container__format">
+                <div class="col news__format mx-auto">
+                    <ul class="d-flex flex-column bg-white p-0">
+                        <li class="list-group">
+                            <img src="../images/juntada2.jpg" alt="Evento Reciente">
+                        </li>
+                        <div class="news__paddingbox">
+                            <li class="list-group">
+                                <p class="px-3">
+                                    <sub class="bg-primary text-white p-1 rounded">01/02/2022</sub>
+                                </p>
+                            </li>
+                            <li class="list-group">
+                                <p>
+                                    <h3 class="fw-bold text-primary px-3">Una jornada exitosa</h3>
+                                </p>
+                            </li>
+                            <li class="list-group">
+                                <p class="px-3">Los juegos de mesa llegaron a Villa Ramallo para quedarse. La primera juntada fue todo un éxito y por pedido de quienes concurrieron se celebrará una segunda juntada próximamente. Estén atentos a las novedades.</p>
+                            </li>
+                        </div>
+                    </ul>
                 </div>
-                <div class="row col col-lg-12">
-                    <div class="col-lg-3 text-center">
-                        <img src="../images/juntada.jpg" alt="Noticia Evento Antigua" height="133px" width="200px">
-                    </div>
-                    <div class="col-lg-9">
-                        <p class="text-center text-lg-start">
-                            <sub>28/01/2022</sub>
-                        </p>
-                        <p>
-                            <h3 class="fw-bold"> Primera Juntada de Juegos de Mesa</h3>
-                        </p>
-                        <p>
-                            El día 30 de enero vamos a realizar nuestra primer juntada de Juegos de Mesa en el Club Marinero Panno (Marinero Panno 345) en la localidad de Villa Ramallo a partir de las 16hs hasta las 00hs. Habrá juegos editados y prototipos para todos los gustos. Estan todos invitados!
-                        </p>
-                    </div>
+                <div class="col news__format mx-auto">
+                    <ul class="d-flex flex-column bg-white p-0">
+                        <li class="list-group">
+                            <img src="../images/juntada.jpg" alt="Evento Antiguo">
+                        </li>
+                        <div class="news__paddingbox">
+                            <li class="list-group">
+                                <p class="px-3">
+                                    <sub class="bg-primary text-white p-1 rounded">28/01/2022</sub>
+                                </p>
+                            </li>
+                            <li class="list-group">
+                                <p>
+                                    <h3 class="fw-bold text-primary px-3">Primera Juntada de Juegos de Mesa</h3>
+                                </p>
+                            </li>
+                            <li class="list-group">
+                                <p class="px-3">El día 30 de enero vamos a realizar nuestra primer juntada de Juegos de Mesa en el Club Marinero Panno (Marinero Panno 345) en la localidad de Villa Ramallo a partir de las 16hs hasta las 00hs. Habrá juegos editados y prototipos para todos los gustos. Estan todos invitados!</p>
+                            </li>
+                        </div>
+                    </ul>
                 </div>
-            </section>
-        </div>
+            </article>
+            <div class="text-center">
+                <!--link a la misma página pero que, próximamente, se linkeará con una página con todas las noticias y que desde noticias.html solo se vean las más recientes-->
+                <a href="../pages/noticias.html"><button class="rounded-pill p-2 bg-primary fw-bold text-white border-0">Más Eventos</button></a>
+                <p class="text-danger fw-bold">proximamente...</p>
+            </div>
+        </section>
 
         
        
