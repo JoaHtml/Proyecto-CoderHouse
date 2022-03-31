@@ -6,3 +6,15 @@
 .zoomin:hover {
     transform: scale(2);
 }
+
+@media (max-width:767px) {
+    footer div .col-12 a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:375px) {
+    footer div .col-12 a {
+        font-size: 12px;
+    }
+}
